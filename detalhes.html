@@ -33,23 +33,27 @@
   <header class="header mb-5">
     <nav class="navbar navbar-expand-lg" style="height: 82px">
       <div class="container"><a href="index.html" class="navbar-brand home" style="height: 81.9px"><img
-            src="img/logo.png" alt="Relogios Pulse logo" class="d-none d-md-inline-block"><span class="sr-only">Relogios
-            Pulse - go to homepage</span></a>
+            src="img/logo.png" alt="Relogios Pulse logo" class="d-none d-md-inline-block"><span 
+            class="sr-only">Relogios Pulse - go to homepage</span></a>
         <div class="navbar-buttons">
           <button type="button" data-toggle="collapse" data-target="#navigation"
             class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i
               class="fa fa-align-justify"></i></button>
           <button type="button" data-toggle="collapse" data-target="#search"
             class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i
-              class="fa fa-search"></i></button><a href="carrinho.html"
+              class="fa fa-search"></i></button><a href="basket.html"
             class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
         </div>
         <div id="navigation" class="collapse navbar-collapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a href="#" class="nav-link active" style="background-color: #e4e4dd">Home</a></li>
+            
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" >Home</a>
+            </li>
 
-            <li class="nav-item dropdown menu"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="200"
-                class="dropdown-toggle nav-link">Masculino<b class="caret"></b></a>
+            <li class="nav-item dropdown menu">
+              <a href="categoria.html" data-toggle="dropdown" data-hover="dropdown" data-delay="200" 
+              class="dropdown-toggle nav-link">Masculino<b class="caret"></b></a>
               <ul class="dropdown-menu megamenu">
                 <li>
                   <div class="row">
@@ -112,7 +116,7 @@
             <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search"
               class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i
                 class="fa fa-search"></i></a>
-            <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="carrinho.html"
+            <div id="basket-overview" class="navbar-collapse collapse d-none d-lg-block"><a href="basket.html"
                 class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span>3 itens no
                   carrinho</span></a>
             </div>
@@ -132,260 +136,192 @@
         </form>
       </div>
     </div>
-  </header>  
+  </header>
+
   <div id="all">
     <div id="content">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div id="main-slider" class="owl-carousel owl-theme">
-              <div class="item"><img src="img/main-slider1.png" alt="" class="img-fluid"></div>
-              <div class="item"><img src="img/main-slider2.png" alt="" class="img-fluid"></div>
-              <div class="item"><img src="img/main-slider3.png" alt="" class="img-fluid"></div>
-              <div class="item"><img src="img/main-slider4.png" alt="" class="img-fluid"></div>
-            </div>
-            <!-- /#main-slider-->
+          <div class="col-lg-12">
+            <!-- breadcrumb-->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Masculino</a></li>
+                <li class="breadcrumb-item"><a href="#">Esporte</a></li>
+                <li aria-current="page" class="breadcrumb-item active">Relógio Masculino</li>
+              </ol>
+            </nav>
           </div>
-        </div>
-      </div>
-      <!--
-        *** ADVANTAGES HOMEPAGE ***
-        _________________________________________________________
-        -->
-      <div id="advantages">
-        <div class="container">
-          <div class="row mb-4">
-            <div class="col-md-4">
-              <div class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
-                <div class="icon"><i class="fa fa-heart"></i></div>
-                <h3><a href="#">QUALIDADE ÚNICA</a></h3>
-                <p class="mb-0">Nosso esforço é fornecer o melhor serviço aos nossos clientes.</p>
+          <div class="col-lg-3 order-2 order-lg-1">
+            <!--
+              *** MENUS AND FILTERS ***
+              _________________________________________________________
+              -->
+            <div class="card sidebar-menu mb-4">
+              <div class="card-header">
+                <h3 class="h4 card-title">Categorias</h3>
+              </div>
+              <div class="card-body">
+                <ul class="nav nav-pills flex-column category-menu">
+                  <li><a href="categoria.html" class="nav-link">Masculino <span class="badge badge-secondary">142</span></a>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="nav-link">Social</a></li>
+                      <li><a href="#" class="nav-link">Casual</a></li>
+                      <li><a href="#" class="nav-link">Smart</a></li>
+                      <li><a href="#" class="nav-link">Esportivo</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="nav-link active">Feminino <span
+                        class="badge badge-light">123</span></a>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="nav-link">Social</a></li>
+                      <li><a href="#" class="nav-link">Casual</a></li>
+                      <li><a href="#" class="nav-link">Smart</a></li>
+                      <li><a href="#" class="nav-link">Esportivo</a></li>
+                      <li><a href="#" class="nav-link">Romântico</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#" class="nav-link">Marcas <span class="badge badge-secondary">321</span></a>
+                    <ul class="list-unstyled">
+                      <li><a href="#" class="nav-link">Citizen</a></li>
+                      <li><a href="#" class="nav-link">Orient</a></li>
+                      <li><a href="#" class="nav-link">Invicta</a></li>
+                      <li><a href="#" class="nav-link">Mondaine</a></li>
+                      <li><a href="#" class="nav-link">Technos</a></li>
+                      <li><a href="#" class="nav-link">Timex</a></li>
+                      <li><a href="#" class="nav-link">Lige</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
-                <div class="icon"><i class="fa fa-tags"></i></div>
-                <h3><a href="#">OS MELHORES PREÇOS DO MERCADO</a></h3>
-                <p class="mb-0">Custo benefício que cabe no seu bolso.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="box clickable d-flex flex-column justify-content-center mb-0 h-100">
-                <div class="icon"><i class="fa fa-thumbs-up"></i></div>
-                <h3><a href="#">SATISFAÇÃO GARANTIDA</a></h3>
-                <p class="mb-0">Selo Loja E-bit Diamante.</p>
-              </div>
-            </div>
+            
+            <!-- *** MENUS AND FILTERS END ***-->
+            
           </div>
-          <!-- /.row-->
-        </div>
-        <!-- /.container-->
-      </div>
-      <!-- /#advantages-->
-      <!-- *** ADVANTAGES END ***-->
-      <!--
-        *** HOT PRODUCT SLIDESHOW ***
-        _________________________________________________________
-        -->
-      <div id="hot">
-        <div class="box py-4">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h2 class="mb-0">ÚLTIMA CHANCE</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="product-slider owl-carousel owl-theme">
-            <div class="item">
-              <div class="product">
-                <div class="flip-container">
-                  <div class="flipper">
-                    <div class="front"><a href="detalhes.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                    <div class="back"><a href="detalhes.html"><img src="img/product1_2.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                  </div>
-                </div><a href="detalhes.html" class="invisible"><img src="img/product1_2.jpg" alt=""
-                    class="img-fluid"></a>
-                <div class="text">
-                  <h3><a href="detalhes.html">Relógio de Pulso Masculino Esporte Militar Relógio A Prova D'água
-                      Multi-Função Display Duplo (C2)</a></h3>
-                  <p class="price">
-                    <del> R$500 <br>
-                    </del> R$299.99
-                  </p>
+          <div class="col-lg-9 order-1 order-lg-2">
+            <div id="productMain" class="row">
+              <div class="col-md-6">
+                <div data-slider-id="1" class="owl-carousel shop-detail-carousel">
+                  <div class="item"> <img src="img/product1.jpg" alt="" class="img-fluid"></div>
+                  <div class="item"> <img src="img/product1.jpg" alt="" class="img-fluid"></div>
+                  <div class="item"> <img src="img/product1.jpg" alt="" class="img-fluid"></div>
                 </div>
-                <!-- /.text-->
                 <div class="ribbon sale">
-                  <div class="theribbon">40% off</div>
+                  <div class="theribbon">40% OFF</div>
                   <div class="ribbon-background"></div>
                 </div>
-
+                
               </div>
-              <!-- /.product-->
+              <div class="col-md-6">
+                <div class="box">
+                  <h1 class="text-center">Relógio de Pulso Masculino SANDA Esporte Militar A Prova D'água
+                    Multi-Função Display Duplo (C2)</h1>
+                  <p class="goToDescription"><a href="#details" class="scroll-to">Ver detalhes do produto</a></p>
+                  <p class="price">R$ 299.99</p>
+                  <p class="text-center buttons"><a href="carrinho.html" class="btn btn-primary"><i
+                        class="fa fa-shopping-cart"></i> Adicionar ao carrinho</a><a href="carrinho.html"
+                      class="btn btn-outline-primary"><i class="fa fa-heart"></i> Adicionar à lista de desejos</a></p>
+                </div>
+                <div data-slider-id="1" class="owl-thumbs">
+                  <button class="owl-thumb-item"><img src="img/product1.jpg" alt="" class="img-fluid"></button>
+                  <button class="owl-thumb-item"><img src="img/product1.jpg" alt="" class="img-fluid"></button>
+                  <button class="owl-thumb-item"><img src="img/product1.jpg" alt="" class="img-fluid"></button>
+                </div>
+              </div>
             </div>
-            <div class="item">
-              <div class="product">
-                <div class="flip-container">
-                  <div class="flipper">
-                    <div class="front"><a href="#"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                    <div class="back"><a href="#"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
+            <div id="details" class="box">
+              <p></p>
+              <h4>Detalhes do Produto</h4>
+              <p>MARCA: Sanda</p>
+              <p>NÚMERO DA PEÇA: 599-M1</p>
+              <p>CRISTAL: Acrílico, Vidro, Plástico</p>
+              <p>TIPO DE TELA: Digital analógico</p>
+              <p>MATERIAL DA PULSEIRA: Borracha</p>
+              
+              <hr>
+              <div class="social">
+                <h4>Compartilhe nas redes sociais</h4>
+                <p>
+                  <a href="#" class="external facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="#" class="external gplus"><i class="fa fa-google-plus"></i></a>
+                  <a href="#" class="external twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="email"><i class="fa fa-envelope"></i></a>
+                </p>
+              </div>
+            </div>
+            <div class="row same-height-row">
+              <div class="col-md-3 col-sm-6">
+                <div class="box same-height">
+                  <h3>Produtos relacionados</h3>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="product same-height">
+                  <div class="flip-container">
+                    <div class="flipper">
+                      <div class="front">
+                        <a href="#"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                      </div>
+                      <div class="back"><a href="#">
+                        <img src="img/product2_2.jpg" alt="" class="img-fluid"></a>
+                      </div>
                     </div>
                   </div>
-                </div><a href="#" class="invisible"><img src="img/product3.jpg" alt="" class="img-fluid"></a>
-                <div class="text">
-                  <h3><a href="#">Relógio de Pulso Mondaine Feminino</a></h3>
-                  <p class="price">
-                    <del>$380 <br>
-                    </del>R$228.00
-                  </p>
-                </div>
-                <!-- /.text-->
-                <div class="ribbon sale">
-                  <div class="theribbon"> 40% Off</div>
-                  <div class="ribbon-background"></div>
-                </div>
-                <!-- /.text-->
-              </div>
-              <!-- /.product-->
-            </div>
-            <div class="item">
-              <div class="product">
-                <div class="flip-container">
-                  <div class="flipper">
-                    <div class="front"><a href="#"><img src="img/product5.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                    <div class="back"><a href="#"><img src="img/product5.jpg" alt="" class="img-fluid"></a>
-                    </div>
+                  <a href="#" class="invisible">
+                    <img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                  <div class="text">
+                    <h3>Relógio Weekender Masculino Azul</h3>
+                    <p class="price">R$ 319.99</p>
                   </div>
-                </div><a href="#" class="invisible"><img src="img/product5.jpg" alt="" class="img-fluid"></a>
-                <div class="text">
-                  <h3><a href="#">Relógio Feminino Orient Azul</a></h3>
-                  <p class="price">
-                    R$499.99
-                  </p>
-
                 </div>
-                <!-- /.text-->
               </div>
-              <!-- /.product-->
-            </div>
-            <div class="item">
-              <div class="product">
-                <div class="flip-container">
-                  <div class="flipper">
-                    <div class="front"><a href="#"><img src="img/product4.jpg" alt="" class="img-fluid"></a>
+                <!-- /.product-->
+              <div class="col-md-3 col-sm-6">
+                <div class="product same-height">
+                  <div class="flip-container">
+                    <div class="flipper">
+                      <div class="front"><a href="#"><img src="img/product4.jpg" alt="" class="img-fluid"></a>
+                      </div>
+                      <div class="back"><a href="#"><img src="img/product4.jpg" alt=""
+                            class="img-fluid"></a></div>
                     </div>
-                    <div class="back"><a href="#"><img src="img/product4.jpg" alt="" class="img-fluid"></a>
-                    </div>
+                  </div><a href="#" class="invisible"><img src="img/product4.jpg" alt=""
+                      class="img-fluid"></a>
+                  <div class="text">
+                    <h3>Relógio Legacy Prata Technos Masculino</h3>
+                    <p class="price">R$ 659.00</p>
                   </div>
-                </div><a href="#" class="invisible"><img src="img/product4.jpg" alt="" class="img-fluid"></a>
-                <div class="text">
-                  <h3><a href="#">Relógio Legacy Prata Technos Masculino</a></h3>
-                  <p class="price">
-                    <del></del>$659.00
-                  </p>
                 </div>
-                <!-- /.text-->
               </div>
-              <!-- /.product-->
-            </div>
-            <div class="item">
-              <div class="product">
-                <div class="flip-container">
-                  <div class="flipper">
-                    <div class="front"><a href="#"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
+                <!-- /.product-->
+              <div class="col-md-3 col-sm-6">
+                <div class="product same-height">
+                  <div class="flip-container">
+                    <div class="flipper">
+                      <div class="front"><a href="#"><img src="img/product8.jpg" alt="" class="img-fluid"></a>
+                      </div>
+                      <div class="back"><a href="#"><img src="img/product8.jpg" alt=""
+                            class="img-fluid"></a></div>
                     </div>
-                    <div class="back"><a href="#"><img src="img/product2_2.jpg" alt="" class="img-fluid"></a>
-                    </div>
+                  </div><a href="#" class="invisible"><img src="img/product8.jpg" alt=""
+                      class="img-fluid"></a>
+                  <div class="text">
+                    <h3>Relógio Masculino Lige Blouse Versace</h3>
+                    <p class="price">R$ 291.90</p>
                   </div>
-                </div><a href="#" class="invisible"><img src="img/product2.jpg" alt="" class="img-fluid"></a>
-                <div class="text">
-                  <h3><a href="#">Relógio Weekender Masculino Azul</a></h3>
-                  <p class="price">
-                    <del></del>$319.99
-                  </p>
                 </div>
               </div>
-              <!-- /.product-->
-            </div>
-            <div class="item">
-              <div class="product">
-                <div class="flip-container">
-                  <div class="flipper">
-                    <div class="front"><a href="#"><img src="img/product6.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                    <div class="back"><a href="#"><img src="img/product6.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                  </div>
-                </div><a href="#" class="invisible"><img src="img/product6.jpg" alt="" class="img-fluid"></a>
-                <div class="text">
-                  <h3><a href="#">Relógio Digital Led Leve Resistente a Agua - Preto</a></h3>
-                  <p class="price">
-                    <del></del>$144.90
-                  </p>
-                </div>                
-              </div>
-              <!-- /.product-->
-            </div>
-            <div class="item">
-              <div class="product">
-                <div class="flip-container">
-                  <div class="flipper">
-                    <div class="front"><a href="#"><img src="img/product7.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                    <div class="back"><a href="#"><img src="img/product7.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                  </div>
-                </div><a href="#" class="invisible"><img src="img/product7.jpg" alt="" class="img-fluid"></a>
-                <div class="text">
-                  <h3><a href="#">Relógio Champion Feminino</a></h3>
-                  <p class="price">
-                    <del>$280</del>$224.00
-                  </p>
-                </div>
-                <!-- /.ribbon-->
-                <div class="ribbon sale">
-                  <div class="theribbon">20% OFF</div>
-                  <div class="ribbon-background"></div>
-                </div>
-                <!-- /.ribbon-->
-              </div>
-              <!-- /.product-->
-            </div>
-            <div class="item">
-              <div class="product">
-                <div class="flip-container">
-                  <div class="flipper">
-                    <div class="front"><a href="#"><img src="img/product8.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                    <div class="back"><a href="#"><img src="img/product8.jpg" alt="" class="img-fluid"></a>
-                    </div>
-                  </div>
-                </div><a href="#" class="invisible"><img src="img/product8.jpg" alt="" class="img-fluid"></a>
-                <div class="text">
-                  <h3><a href="#">Relógio Masculino Lige Blouse Versace</a></h3>
-                  <p class="price">
-                    <del></del>$291.90
-                  </p>
-                </div>
-                <!-- /.text-->
-              </div>
-              <!-- /.product-->
-            </div>
-            <!-- /.product-slider-->
+                <!-- /.product-->
+            </div>            
           </div>
-          <!-- /.container-->
+          <!-- /.col-md-9-->
         </div>
-        <!-- /#hot-->
-        <!-- *** HOT END ***-->
       </div>
-
-      <!--
+    </div>
+  </div>
+  <!--
     *** FOOTER ***
     _________________________________________________________
     -->
